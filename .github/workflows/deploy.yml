@@ -16,10 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: dc49d6ac188d6f243701d00d62f496c4
-          projectName: haraldur-pro
-          directory: .
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        run: npx wrangler pages deploy . --project-name=haraldur-pro --branch=main
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: dc49d6ac188d6f243701d00d62f496c4
