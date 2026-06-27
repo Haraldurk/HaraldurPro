@@ -18,12 +18,12 @@ Show `<span class="partner-name">` **only** for graphic/abstract marks where the
 | File | Institution | Type | Label? |
 |------|-------------|------|--------|
 | `listasafn-islands.svg` | Listasafn Íslands | LÍ monogram (created) | ✓ |
-| `listasafn-reykjavikur.svg` | Listasafn Reykjavíkur | wordmark (created) | — |
+| `listasafn-reykjavikur-logo.png` | Listasafn Reykjavíkur | 3D triangle mark (from user-provided JPG, white on transparent) | ✓ |
 | `listasafn-akureyrar-real.png` | Listasafn Akureyrar | PNG logo (downloaded from lam.is, RGBA transparent, uses `.logo-invert` CSS filter) | — |
-| `nylistasafnid.svg` | Nýlistasafnið | wordmark (created) | — |
+| `nylistasafnid-logo.png` | Nýlistasafnið | diagonal mark (from user-provided JPG, white on transparent) | — |
 | `kunstnerneshus-real.svg` | Kunstnernes Hus | lion mark (downloaded safari-pinned-tab, fill converted to white) | ✓ |
 | `ateliernord_compass.svg` | Atelier Nord | abstract mark (downloaded, already white) | ✓ |
-| `vasulkakitchen-real.svg` | Vasulka Kitchen Brno | potrace mark (downloaded from vasulkakitchen.org favicon, fill converted to white) | ✓ |
+| `vasulkakitchen-logo.png` | Vasulka Kitchen Brno | branding image (from user-provided JPG, white marks on transparent) | — |
 | `nime.svg` | NIME Conference | boxed letterform (downloaded, colors fixed to white) | ✓ |
 | `insomnia.svg` | Insomnia Festival | wordmark (created) | — |
 | `dansenshus-real.svg` | Dansens Hus | inline SVG from dansenshus.com (text wordmark, fill set to white) | — |
@@ -35,7 +35,7 @@ Show `<span class="partner-name">` **only** for graphic/abstract marks where the
 | `veitur-real.svg` | Veitur | inline SVG from veitur.is (wordmark, CSS class fills converted to white) | — |
 | `taekniminjasafn-real.png` | Tækniminjasafn Austurlands | indexed PNG with tRNS (downloaded from tekmus.is, uses `.logo-invert`) | — |
 | `lhi.svg` | Listaháskóli Íslands (LHÍ) | text mark (downloaded, already white) | — |
-| `sim.svg` | SÍM | wordmark (created) | — |
+| `sim-logo.png` | SÍM | mark (from user-provided AVIF, white on transparent) | — |
 | `pori.svg` | Pori Art Museum / Porin taidemuseo | text mark (downloaded, colors converted to white) | — |
 | `lapinamk-real.svg` | Lapin AMK | circular mark (downloaded safari-pinned-tab from lapinamk.fi, fill converted to white) | ✓ |
 
