@@ -23,21 +23,21 @@ Show `<span class="partner-name">` **only** for graphic/abstract marks where the
 | `nylistasafnid.svg` | Nýlistasafnið | wordmark (created) | — |
 | `kunstnerneshus-real.svg` | Kunstnernes Hus | lion mark (downloaded safari-pinned-tab, fill converted to white) | ✓ |
 | `ateliernord_compass.svg` | Atelier Nord | abstract mark (downloaded, already white) | ✓ |
-| `vasulkakitchen.svg` | Vasulka Kitchen Brno | wordmark (created) | — |
+| `vasulkakitchen-real.svg` | Vasulka Kitchen Brno | potrace mark (downloaded from vasulkakitchen.org favicon, fill converted to white) | ✓ |
 | `nime.svg` | NIME Conference | boxed letterform (downloaded, colors fixed to white) | ✓ |
 | `insomnia.svg` | Insomnia Festival | wordmark (created) | — |
-| `dansenshus.svg` | Dansens Hus | wordmark (created) | — |
+| `dansenshus-real.svg` | Dansens Hus | inline SVG from dansenshus.com (text wordmark, fill set to white) | — |
 | `okno.svg` | Okno | wordmark (created) | — |
 | `steim.svg` | STEIM | wordmark (created) | — |
 | `atopia.svg` | Atopia | wordmark (created) | — |
 | `raflost-real.png` | RAFLOST | PNG logo (downloaded from raflost.is, RGBA transparent, uses `.logo-invert` CSS filter) | — |
 | `reykjavik.svg` | Reykjavíkurborg | city mark (downloaded from styles.reykjavik.is, colors converted to white) | ✓ |
-| `veitur.svg` | Veitur | wordmark (created) | — |
+| `veitur-real.svg` | Veitur | inline SVG from veitur.is (wordmark, CSS class fills converted to white) | — |
 | `taekniminjasafn.svg` | Tækniminjasafn Austurlands | wordmark (created) | — |
 | `lhi.svg` | Listaháskóli Íslands (LHÍ) | text mark (downloaded, already white) | — |
 | `sim.svg` | SÍM | wordmark (created) | — |
 | `pori.svg` | Pori Art Museum / Porin taidemuseo | text mark (downloaded, colors converted to white) | — |
-| `lapinamk.svg` | Lapin AMK | wordmark (created) | — |
+| `lapinamk-real.svg` | Lapin AMK | circular mark (downloaded safari-pinned-tab from lapinamk.fi, fill converted to white) | ✓ |
 
 ### SVG color convention
 All logos must be **white fills on transparent background**. When converting downloaded SVGs:
