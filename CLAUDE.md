@@ -37,7 +37,7 @@ Show `<span class="partner-name">` **only** for graphic/abstract marks where the
 | `lhi.svg` | Listaháskóli Íslands (LHÍ) | text mark (downloaded, already white) | — |
 | `sim-logo.png` | SÍM | mark (from user-provided AVIF, white on transparent) | — |
 | `pori.svg` | Pori Art Museum / Porin taidemuseo | text mark (downloaded, colors converted to white) | — |
-| `lapinamk-real.svg` | Lapin AMK | circular mark (downloaded safari-pinned-tab from lapinamk.fi, fill converted to white) | ✓ |
+| `lapinamk-logo.png` | Lapin AMK | wordmark (from user-provided PNG, black on white inverted to white on transparent) | — |
 
 ### SVG color convention
 All logos must be **white fills on transparent background**. When converting downloaded SVGs:
