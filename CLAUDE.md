@@ -9,9 +9,7 @@ Single-file site: `index.html`. All CSS is inline in `<style>`. All JS is inline
 The "Selected work with" strip sits between SERVICES and ABOUT. 21 institutions total.
 
 ### Label convention
-Show `<span class="partner-name">` **only** for graphic/abstract marks where the mark itself does not legibly spell out the institution name:
-- **Keep label**: Atelier Nord (abstract compass mark), LÍ / Listasafn Íslands (monogram), NIME (boxed letterform mark), Reykjavíkurborg (logo says "Reykjavík", not the full org name)
-- **No label**: all text wordmark SVGs — the name is already in the mark
+Show `<span class="partner-name">` under **all** partner logos — every item has a name label.
 
 ### All logos (21 institutions)
 
