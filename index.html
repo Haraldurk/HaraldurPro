@@ -270,6 +270,15 @@
                 color: #555;
             }
 
+            .logo-invert {
+                filter: brightness(0) invert(1);
+            }
+
+            .partners-strip a {
+                text-decoration: none;
+                color: inherit;
+            }
+
             @media (max-width: 680px) {
                 .services {
                     grid-template-columns: 1fr;
@@ -337,73 +346,115 @@
         <section class="partners">
             <p class="partners-label">Selected work with</p>
             <div class="partners-strip">
-                <div class="partner-item">
-                    <img src="images/partners/listasafn-islands.svg" alt="Listasafn Íslands" class="partner-logo" />
-                    <span class="partner-name">Listasafn Íslands</span>
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/listasafn-reykjavikur.svg" alt="Listasafn Reykjavíkur" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/listasafn-akureyrar.svg" alt="Listasafn Akureyrar" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/nylistasafnid.svg" alt="Nýlistasafnið" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/kunstnerneshus.svg" alt="Kunstnernes Hus" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/ateliernord_compass.svg" alt="Atelier Nord" class="partner-logo" />
-                    <span class="partner-name">Atelier Nord</span>
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/vasulkakitchen.svg" alt="Vasulka Kitchen" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/nime.svg" alt="NIME Conference" class="partner-logo" />
-                    <span class="partner-name">NIME</span>
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/insomnia.svg" alt="Insomnia Festival" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/dansenshus.svg" alt="Dansens Hus" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/okno.svg" alt="Okno" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/steim.svg" alt="STEIM" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/atopia.svg" alt="Atopia" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/raflost.svg" alt="RAFLOST" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/reykjavik.svg" alt="Reykjavíkurborg" class="partner-logo" />
-                    <span class="partner-name">Reykjavíkurborg</span>
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/veitur.svg" alt="Veitur" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/taekniminjasafn.svg" alt="Tækniminjasafn Austurlands" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/lhi.svg" alt="Listaháskóli Íslands" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/sim.svg" alt="SÍM" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/pori.svg" alt="Pori Art Museum" class="partner-logo" />
-                </div>
-                <div class="partner-item">
-                    <img src="images/partners/lapinamk.svg" alt="Lapin AMK" class="partner-logo" />
-                </div>
+                <a href="https://listasafn.is" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/listasafn-islands.svg" alt="Listasafn Íslands" class="partner-logo" />
+                        <span class="partner-name">Listasafn Íslands</span>
+                    </div>
+                </a>
+                <a href="https://listasafnreykjavikur.is" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/listasafn-reykjavikur.svg" alt="Listasafn Reykjavíkur" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://lam.is" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/listasafn-akureyrar-real.png" alt="Listasafn Akureyrar" class="partner-logo logo-invert" />
+                    </div>
+                </a>
+                <a href="https://nylo.is" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/nylistasafnid.svg" alt="Nýlistasafnið" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://kunstnerneshus.no" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/kunstnerneshus.svg" alt="Kunstnernes Hus" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://ateliernord.no" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/ateliernord_compass.svg" alt="Atelier Nord" class="partner-logo" />
+                        <span class="partner-name">Atelier Nord</span>
+                    </div>
+                </a>
+                <a href="https://vasulkakitchen.eu" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/vasulkakitchen.svg" alt="Vasulka Kitchen" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://nime.org" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/nime.svg" alt="NIME Conference" class="partner-logo" />
+                        <span class="partner-name">NIME</span>
+                    </div>
+                </a>
+                <a href="https://insomniafestival.no" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/insomnia.svg" alt="Insomnia Festival" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://dansenshus.no" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/dansenshus.svg" alt="Dansens Hus" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://web.archive.org/web/2018/http://okno.be" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/okno.svg" alt="Okno" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/STEIM" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/steim.svg" alt="STEIM" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://atopia.no" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/atopia.svg" alt="Atopia" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://raflost.is" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/raflost-real.png" alt="RAFLOST" class="partner-logo logo-invert" />
+                    </div>
+                </a>
+                <a href="https://reykjavik.is" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/reykjavik.svg" alt="Reykjavíkurborg" class="partner-logo" />
+                        <span class="partner-name">Reykjavíkurborg</span>
+                    </div>
+                </a>
+                <a href="https://veitur.is" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/veitur.svg" alt="Veitur" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://minjasafn.is" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/taekniminjasafn.svg" alt="Tækniminjasafn Austurlands" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://lhi.is" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/lhi.svg" alt="Listaháskóli Íslands" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://sim.is" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/sim.svg" alt="SÍM" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://poriartmuseum.fi" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/pori.svg" alt="Pori Art Museum" class="partner-logo" />
+                    </div>
+                </a>
+                <a href="https://lapinamk.fi" target="_blank" rel="noopener">
+                    <div class="partner-item">
+                        <img src="images/partners/lapinamk.svg" alt="Lapin AMK" class="partner-logo" />
+                    </div>
+                </a>
             </div>
         </section>
 
