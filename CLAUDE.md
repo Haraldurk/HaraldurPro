@@ -28,12 +28,12 @@ Show `<span class="partner-name">` **only** for graphic/abstract marks where the
 | `insomnia.svg` | Insomnia Festival | wordmark (created) | — |
 | `dansenshus-real.svg` | Dansens Hus | inline SVG from dansenshus.com (text wordmark, fill set to white) | — |
 | `okno.svg` | Okno | wordmark (created) | — |
-| `steim.svg` | STEIM | wordmark (created) | — |
+| `steim-real.png` | STEIM | RGBA PNG (downloaded from steim.org CSS background-image, uses `.logo-invert`) | — |
 | `atopia.svg` | Atopia | wordmark (created) | — |
 | `raflost-real.png` | RAFLOST | PNG logo (downloaded from raflost.is, RGBA transparent, uses `.logo-invert` CSS filter) | — |
 | `reykjavik.svg` | Reykjavíkurborg | city mark (downloaded from styles.reykjavik.is, colors converted to white) | ✓ |
 | `veitur-real.svg` | Veitur | inline SVG from veitur.is (wordmark, CSS class fills converted to white) | — |
-| `taekniminjasafn.svg` | Tækniminjasafn Austurlands | wordmark (created) | — |
+| `taekniminjasafn-real.png` | Tækniminjasafn Austurlands | indexed PNG with tRNS (downloaded from tekmus.is, uses `.logo-invert`) | — |
 | `lhi.svg` | Listaháskóli Íslands (LHÍ) | text mark (downloaded, already white) | — |
 | `sim.svg` | SÍM | wordmark (created) | — |
 | `pori.svg` | Pori Art Museum / Porin taidemuseo | text mark (downloaded, colors converted to white) | — |
