@@ -21,7 +21,7 @@ Show `<span class="partner-name">` **only** for graphic/abstract marks where the
 | `listasafn-reykjavikur.svg` | Listasafn Reykjavíkur | wordmark (created) | — |
 | `listasafn-akureyrar-real.png` | Listasafn Akureyrar | PNG logo (downloaded from lam.is, RGBA transparent, uses `.logo-invert` CSS filter) | — |
 | `nylistasafnid.svg` | Nýlistasafnið | wordmark (created) | — |
-| `kunstnerneshus.svg` | Kunstnernes Hus | wordmark (created) | — |
+| `kunstnerneshus-real.svg` | Kunstnernes Hus | lion mark (downloaded safari-pinned-tab, fill converted to white) | ✓ |
 | `ateliernord_compass.svg` | Atelier Nord | abstract mark (downloaded, already white) | ✓ |
 | `vasulkakitchen.svg` | Vasulka Kitchen Brno | wordmark (created) | — |
 | `nime.svg` | NIME Conference | boxed letterform (downloaded, colors fixed to white) | ✓ |
