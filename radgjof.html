@@ -14,7 +14,7 @@
         />
         <meta
             property="og:image"
-            content="https://haraldur.pro/images/radgjof-hero2.jpg"
+            content="https://haraldur.pro/images/radgjof-hero.jpg"
         />
         <meta property="og:url" content="https://haraldur.pro/radgjof.html" />
         <meta property="og:type" content="website" />
@@ -62,26 +62,29 @@
                 letter-spacing: 0.01em;
             }
 
-            /* BACK LINK */
-            .back-link {
-                padding: 0 2rem 1rem;
-                font-size: 0.8rem;
-                color: #555;
+            .lang-toggle {
+                display: flex;
+                gap: 0.5rem;
+                font-size: 0.85rem;
             }
 
-            .back-link a {
+            .lang-toggle button {
+                background: none;
+                border: none;
+                cursor: pointer;
                 color: #555;
-                text-decoration: none;
-                border-bottom: 1px solid #2a2a3a;
-                padding-bottom: 1px;
-                transition:
-                    color 0.15s,
-                    border-color 0.15s;
+                font-size: 0.85rem;
+                font-family: inherit;
+                padding: 0;
             }
 
-            .back-link a:hover {
+            .lang-toggle .sep {
+                color: #333;
+            }
+
+            .lang-toggle button.active {
                 color: #e8e8e0;
-                border-color: #555;
+                font-weight: 500;
             }
 
             /* HERO */
@@ -180,6 +183,18 @@
                 line-height: 1.7;
             }
 
+            .card ul {
+                margin-top: 0.75rem;
+                padding-left: 1.25rem;
+                font-size: 0.875rem;
+                color: #666;
+                line-height: 1.7;
+            }
+
+            .card ul li {
+                margin-bottom: 0.2rem;
+            }
+
             /* CONTACT */
             .contact {
                 text-align: center;
@@ -224,9 +239,6 @@
                 nav {
                     padding: 1rem 1.25rem;
                 }
-                .back-link {
-                    padding: 0 1.25rem 1rem;
-                }
                 .intro {
                     margin: 2rem 1.25rem;
                 }
@@ -236,72 +248,164 @@
     <body>
         <!-- NAV -->
         <nav>
-            <a class="site-name" href="index.html" style="text-decoration: none"
-                >Haraldur Karlsson</a
-            >
+            <a class="site-name" href="index.html" style="text-decoration: none">← Haraldur Karlsson</a>
+            <div class="lang-toggle">
+                <button data-lang="en" onclick="setLang('en')">EN</button>
+                <span class="sep">·</span>
+                <button data-lang="is" onclick="setLang('is')">IS</button>
+                <span class="sep">·</span>
+                <button data-lang="no" onclick="setLang('no')">NO</button>
+            </div>
         </nav>
-
-        <!-- BACK LINK -->
-        <div class="back-link">
-            <a href="index.html">← Til baka á forsíðu</a>
-        </div>
 
         <!-- HERO -->
         <section class="hero">
-            <img src="images/radgjof-hero2.jpg" alt="" />
+            <img src="images/radgjof-hero.jpg" alt="" />
         </section>
 
         <!-- INTRO -->
         <div class="intro">
-            <h1>Greining, stefnumótun og skapandi tækni</h1>
-            <p>
-                Ég aðstoða menningarstofnanir og félagasamtök við að umbreyta
-                hugmyndum og kerfislægum vanda í skýra, sjónræna og
-                framkvæmanlega framtíðarsýn. Hvort sem verkefnið kallar á
-                nýstárlega stafræna upplifun fyrir safngesti eða hárnákvæma
-                gagnagreiningu fyrir stjórnvöld, þá brúa ég bilið milli gagna,
-                listar og tækni.
-            </p>
+            <h1 data-i18n="radgjof_hero_title"></h1>
+            <p data-i18n="radgjof_hero_body"></p>
         </div>
 
         <!-- SERVICES -->
         <section class="services two-col">
             <div class="card">
-                <h3>Stafræn og skapandi þarfagreining</h3>
-                <p class="card-subtitle">Fyrir söfn og sýningar</p>
-                <p>
-                    Ég aðstoða við að skoða hvernig mætti beita rauntímavinnslu,
-                    sjónrænum reikniritum og sónólógíu til að draga áhorfandann
-                    inn í efniviðinn. Ég set upp virkar, keyranlegar skissur
-                    beint í vafra á methraða og skila af mér skýrum
-                    kröfulýsingum og verklýsingum sem byggja traustan grunn
-                    fyrir tæknilega framkvæmd.
-                </p>
+                <h3 data-i18n="radgjof_card1_title"></h3>
+                <p class="card-subtitle" data-i18n="radgjof_card1_sub"></p>
+                <p data-i18n="radgjof_card1_body"></p>
+                <ul>
+                    <li data-i18n="req_point_1"></li>
+                    <li data-i18n="req_point_2"></li>
+                    <li data-i18n="req_point_3"></li>
+                </ul>
             </div>
             <div class="card">
-                <h3>Gagnadrifin stefnumótun og hagsmunamiðlun</h3>
-                <p class="card-subtitle">Fyrir stjórnir og samtök</p>
-                <p>
-                    Ég hjálpa samtökum að umbreyta flóknum baráttumálum í skýr,
-                    mælanleg og óhrekjanleg gögn. Ég vinn tölulega
-                    röksemdafærslu úr hrágögnum, set upp norrænan samanburð á
-                    innviðum og hanna hnitmiðuð stefnubréf og glærusett sem eru
-                    tilbúin fyrir áhrifaríka stjórnsýslufundi.
-                </p>
+                <h3 data-i18n="radgjof_card2_title"></h3>
+                <p class="card-subtitle" data-i18n="radgjof_card2_sub"></p>
+                <p data-i18n="radgjof_card2_body"></p>
+                <ul>
+                    <li data-i18n="pol_point_1"></li>
+                    <li data-i18n="pol_point_2"></li>
+                    <li data-i18n="pol_point_3"></li>
+                </ul>
             </div>
         </section>
 
         <!-- CONTACT -->
         <section class="contact">
-            <a href="mailto:haraldur@haraldur.pro">Hafa samband</a>
+            <a href="mailto:haraldur@haraldur.pro">
+                <span data-i18n="contact_label"></span>
+            </a>
         </section>
 
         <!-- FOOTER -->
         <footer>
-            Greiðslur samkvæmt viðmiðunartöxtum SÍM —
-            <a href="https://sim.is/reiknivel" target="_blank" rel="noopener"
-                >sim.is/reiknivel</a
-            >
+            <span data-i18n="footer"></span>
+            —
+            <a
+                href="https://sim.is/reiknivel"
+                target="_blank"
+                rel="noopener"
+                data-i18n="footer_link_text"
+            ></a>
         </footer>
+
+        <script>
+            const strings = {
+                en: {
+                    radgjof_hero_title: "Analysis, Policy & Creative Technology",
+                    radgjof_hero_body: "I assist cultural institutions and organizations in translating ideas and systemic challenges into a clear, visual, and actionable vision. Whether a project requires an innovative digital experience for museum visitors or high-precision data analysis for policymakers, I bridge the gap between data, art, and technology.",
+                    radgjof_card1_title: "Digital & Creative Needs Assessment",
+                    radgjof_card1_sub: "For museums and exhibitions",
+                    radgjof_card1_body: "I explore how real-time processing, visual algorithms, and sonology can be used to draw the audience into the material. I build functional, interactive browser prototypes at rapid speed and deliver clear technical requirements and statements of work that form a solid foundation for technical implementation.",
+                    req_point_1: "Real-time processing and interactive browser prototypes (WebGL/WebGPU).",
+                    req_point_2: "Sonology and sensory data visualization.",
+                    req_point_3: "Technical requirements and statement of work for tenders.",
+                    radgjof_card2_title: "Data-Driven Advocacy & Policy",
+                    radgjof_card2_sub: "For boards and organizations",
+                    radgjof_card2_body: "I help organizations transform complex advocacy issues into clear, measurable, and irrefutable data. I formulate data-driven arguments from raw data, map comparative analyses of Nordic infrastructure, and design concise policy briefs and presentation decks ready for high-level governmental meetings.",
+                    pol_point_1: "Data-driven argumentation from raw data.",
+                    pol_point_2: "Comparative analysis of Nordic cultural infrastructure.",
+                    pol_point_3: "Design of policy briefs and governmental presentation decks.",
+                    contact_label: "Get in touch",
+                    footer: "Fees follow SÍM professional guidelines",
+                    footer_link_text: "sim.is/reiknivel",
+                },
+                is: {
+                    radgjof_hero_title: "Greining, stefnumótun og skapandi tækni",
+                    radgjof_hero_body: "Ég aðstoða menningarstofnanir og félagasamtök við að umbreyta hugmyndum og kerfislægum vanda í skýra, sjónræna og framkvæmanlega framtíðarsýn. Hvort sem verkefnið kallar á nýstárlega stafræna upplifun fyrir safngesti eða hárnákvæma gagnagreiningu fyrir stjórnvöld, þá brúa ég bilið milli gagna, listar og tækni.",
+                    radgjof_card1_title: "Stafræn og skapandi þarfagreining",
+                    radgjof_card1_sub: "Fyrir söfn og sýningar",
+                    radgjof_card1_body: "Ég aðstoða við að skoða hvernig mætti beita rauntímavinnslu, sjónrænum reikniritum og sónólógíu til að draga áhorfandann inn í efniviðinn. Ég set upp virkar, keyranlegar skissur beint í vafra á methraða og skila af mér skýrum kröfulýsingum og verklýsingum sem byggja traustan grunn fyrir tæknilega framkvæmd.",
+                    req_point_1: "Rauntímavinnsla og gagnvirkar vafrafrumgerðir (WebGL/WebGPU).",
+                    req_point_2: "Sónólógía og skynræn framsetning á gögnum.",
+                    req_point_3: "Tæknilegar kröfulýsingar og verklýsingar fyrir útboð.",
+                    radgjof_card2_title: "Gagnadrifin stefnumótun og hagsmunamiðlun",
+                    radgjof_card2_sub: "Fyrir stjórnir og samtök",
+                    radgjof_card2_body: "Ég hjálpa samtökum að umbreyta flóknum baráttumálum í skýr, mælanleg og óhrekjanleg gögn. Ég vinn tölulega röksemdafærslu úr hrágögnum, set upp norrænan samanburð á innviðum og hanna hnitmiðuð stefnubréf og glærusett sem eru tilbúin fyrir áhrifaríka stjórnsýslufundi.",
+                    pol_point_1: "Töluleg röksemdafærsla úr hrágögnum.",
+                    pol_point_2: "Samanburðargreining á norrænum menningarinnviðum.",
+                    pol_point_3: "Hönnun á stefnubréfum (Policy Briefs) og stjórnvaldsglærum.",
+                    contact_label: "Hafa samband",
+                    footer: "Greiðslur samkvæmt viðmiðunartöxtum SÍM",
+                    footer_link_text: "sim.is/reiknivel",
+                },
+                no: {
+                    radgjof_hero_title: "Analyse, policy og kreativ teknologi",
+                    radgjof_hero_body: "Jeg bistår kulturinstitusjoner og organisasjoner med å oversette ideer og systemiske utfordringer til en klar, visuell og gjennomførbar visjon. Enten et prosjekt krever en nyskapende digital opplevelse for museumsgjester eller høypresisjons datanalyse for myndigheter, bygger jeg bro mellom data, kunst og teknologi.",
+                    radgjof_card1_title: "Digital og kreativ behovsanalyse",
+                    radgjof_card1_sub: "For museer og utstillinger",
+                    radgjof_card1_body: "Jeg utforsker hvordan sanntidsbehandling, visuelle algoritmer og sonologi kan brukes til å trekke publikum inn i materialet. Jeg bygger fungerende, interaktive nettleserprototyper i høyt tempo og leverer tydelige kravspesifikasjoner og anbudsdokumentasjon som danner et solid grunnlag for teknisk gjennomføring.",
+                    req_point_1: "Sanntidsbehandling og interaktive nettleserprototyper (WebGL/WebGPU).",
+                    req_point_2: "Sonologi og sanselig datavisualisering.",
+                    req_point_3: "Tekniske kravspesifikasjoner og anbudsdokumentasjon.",
+                    radgjof_card2_title: "Datadrevet politikk og interessearbeid",
+                    radgjof_card2_sub: "For styrer og organisasjoner",
+                    radgjof_card2_body: "Jeg hjelper organisasjoner med å forvandle komplekse kampsaker til klare, målbare og ubestridelige data. Jeg utarbeider tallbasert argumentasjon fra rådata, setter opp komparative analyser av nordisk kulturinfrastruktur, og designer presise policy-notater og presentasjoner klare for myndighetsmøter.",
+                    pol_point_1: "Datadrevet argumentasjon basert på rådata.",
+                    pol_point_2: "Komparativ analyse av nordisk kulturinfrastruktur.",
+                    pol_point_3: "Utforming av policy-notater og presentasjoner for myndigheter.",
+                    contact_label: "Ta kontakt",
+                    footer: "Honorar etter SÍM faglige retningslinjer",
+                    footer_link_text: "sim.is/reiknivel",
+                },
+            };
+
+            function detectLang() {
+                const l = navigator.language || "";
+                if (l.startsWith("is")) return "is";
+                if (
+                    l.startsWith("no") ||
+                    l.startsWith("nb") ||
+                    l.startsWith("nn") ||
+                    l.startsWith("da")
+                )
+                    return "no";
+                return "en";
+            }
+
+            function setLang(lang) {
+                const s = strings[lang];
+                document.querySelectorAll("[data-i18n]").forEach((el) => {
+                    const key = el.getAttribute("data-i18n");
+                    if (s[key] !== undefined) {
+                        el.textContent = s[key];
+                    }
+                });
+                document
+                    .querySelectorAll(".lang-toggle button")
+                    .forEach((btn) => {
+                        btn.classList.toggle(
+                            "active",
+                            btn.getAttribute("data-lang") === lang,
+                        );
+                    });
+                document.documentElement.lang = lang === "no" ? "nb" : lang;
+            }
+
+            setLang(detectLang());
+        </script>
     </body>
 </html>
