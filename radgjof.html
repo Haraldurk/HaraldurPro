@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="is">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Ráðgjafarþjónusta Haraldar Karlssonar — greining, stefnumótun og skapandi tækni fyrir menningarstofnanir og félagasamtök."
+        />
+        <meta property="og:title" content="Ráðgjöf | Haraldur Karlsson" />
+        <meta
+            property="og:description"
+            content="Greining, stefnumótun og skapandi tækni fyrir menningarstofnanir og félagasamtök."
+        />
+        <meta
+            property="og:image"
+            content="https://haraldur.pro/images/radgjof-hero2.jpg"
+        />
+        <meta property="og:url" content="https://haraldur.pro/radgjof.html" />
+        <meta property="og:type" content="website" />
+        <title>Ráðgjöf | Haraldur Karlsson</title>
+        <link rel="canonical" href="https://haraldur.pro/radgjof.html" />
+        <link rel="icon" href="data:," />
+        <style>
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background: #0a0a0f;
+                color: #e8e8e0;
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    sans-serif;
+                line-height: 1.65;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: underline;
+            }
+            a:hover {
+                color: #e8e8e0;
+            }
+
+            /* NAV */
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.25rem 2rem;
+            }
+
+            nav .site-name {
+                font-size: 1rem;
+                font-weight: 500;
+                letter-spacing: 0.01em;
+            }
+
+            /* BACK LINK */
+            .back-link {
+                padding: 0 2rem 1rem;
+                font-size: 0.8rem;
+                color: #555;
+            }
+
+            .back-link a {
+                color: #555;
+                text-decoration: none;
+                border-bottom: 1px solid #2a2a3a;
+                padding-bottom: 1px;
+                transition:
+                    color 0.15s,
+                    border-color 0.15s;
+            }
+
+            .back-link a:hover {
+                color: #e8e8e0;
+                border-color: #555;
+            }
+
+            /* HERO */
+            .hero {
+                width: 100%;
+                height: 60vh;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .hero img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .hero::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(
+                    to bottom,
+                    rgba(10, 10, 15, 0.2) 0%,
+                    rgba(10, 10, 15, 1) 100%
+                );
+            }
+
+            /* INTRO */
+            .intro {
+                max-width: 640px;
+                margin: 3rem auto;
+                padding: 2rem 2rem 2rem 1.5rem;
+                border-left: 2px solid #333;
+                font-family: Georgia, "Times New Roman", serif;
+                font-size: 1.1rem;
+                color: #e8e8e0;
+            }
+
+            .intro h1 {
+                font-size: 1.15rem;
+                font-weight: 400;
+                font-style: italic;
+                margin-bottom: 1rem;
+                line-height: 1.4;
+            }
+
+            .intro p {
+                font-style: normal;
+                font-size: 0.95rem;
+                color: #aaa;
+                line-height: 1.75;
+            }
+
+            /* SERVICES */
+            .services {
+                max-width: 960px;
+                margin: 0 auto;
+                padding: 0 2rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+            }
+
+            .services.two-col {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 720px;
+            }
+
+            .card {
+                background: #13131c;
+                border: 0.5px solid #2a2a3a;
+                border-radius: 6px;
+                padding: 1.5rem;
+            }
+
+            .card h3 {
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: #e8e8e0;
+                margin-bottom: 0.4rem;
+                letter-spacing: 0.02em;
+            }
+
+            .card .card-subtitle {
+                font-size: 0.72rem;
+                color: #555;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                margin-bottom: 0.75rem;
+            }
+
+            .card p {
+                font-size: 0.875rem;
+                color: #888;
+                line-height: 1.7;
+            }
+
+            /* CONTACT */
+            .contact {
+                text-align: center;
+                margin: 3rem auto;
+            }
+
+            .contact a {
+                font-size: 0.95rem;
+                color: #e8e8e0;
+                text-decoration: none;
+                border-bottom: 1px solid #444;
+                padding-bottom: 2px;
+                transition: border-color 0.15s;
+            }
+
+            .contact a:hover {
+                border-color: #888;
+            }
+
+            /* FOOTER */
+            footer {
+                text-align: center;
+                color: #444;
+                font-size: 13px;
+                margin: 2rem auto 3rem;
+            }
+
+            footer a {
+                color: #444;
+            }
+
+            footer a:hover {
+                color: #888;
+            }
+
+            @media (max-width: 680px) {
+                .services,
+                .services.two-col {
+                    grid-template-columns: 1fr;
+                    padding: 0 1.25rem;
+                }
+                nav {
+                    padding: 1rem 1.25rem;
+                }
+                .back-link {
+                    padding: 0 1.25rem 1rem;
+                }
+                .intro {
+                    margin: 2rem 1.25rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- NAV -->
+        <nav>
+            <a class="site-name" href="index.html" style="text-decoration: none"
+                >Haraldur Karlsson</a
+            >
+        </nav>
+
+        <!-- BACK LINK -->
+        <div class="back-link">
+            <a href="index.html">← Til baka á forsíðu</a>
+        </div>
+
+        <!-- HERO -->
+        <section class="hero">
+            <img src="images/radgjof-hero2.jpg" alt="" />
+        </section>
+
+        <!-- INTRO -->
+        <div class="intro">
+            <h1>Greining, stefnumótun og skapandi tækni</h1>
+            <p>
+                Ég aðstoða menningarstofnanir og félagasamtök við að umbreyta
+                hugmyndum og kerfislægum vanda í skýra, sjónræna og
+                framkvæmanlega framtíðarsýn. Hvort sem verkefnið kallar á
+                nýstárlega stafræna upplifun fyrir safngesti eða hárnákvæma
+                gagnagreiningu fyrir stjórnvöld, þá brúa ég bilið milli gagna,
+                listar og tækni.
+            </p>
+        </div>
+
+        <!-- SERVICES -->
+        <section class="services two-col">
+            <div class="card">
+                <h3>Stafræn og skapandi þarfagreining</h3>
+                <p class="card-subtitle">Fyrir söfn og sýningar</p>
+                <p>
+                    Ég aðstoða við að skoða hvernig mætti beita rauntímavinnslu,
+                    sjónrænum reikniritum og sónólógíu til að draga áhorfandann
+                    inn í efniviðinn. Ég set upp virkar, keyranlegar skissur
+                    beint í vafra á methraða og skila af mér skýrum
+                    kröfulýsingum og verklýsingum sem byggja traustan grunn
+                    fyrir tæknilega framkvæmd.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Gagnadrifin stefnumótun og hagsmunamiðlun</h3>
+                <p class="card-subtitle">Fyrir stjórnir og samtök</p>
+                <p>
+                    Ég hjálpa samtökum að umbreyta flóknum baráttumálum í skýr,
+                    mælanleg og óhrekjanleg gögn. Ég vinn tölulega
+                    röksemdafærslu úr hrágögnum, set upp norrænan samanburð á
+                    innviðum og hanna hnitmiðuð stefnubréf og glærusett sem eru
+                    tilbúin fyrir áhrifaríka stjórnsýslufundi.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact">
+            <a href="mailto:haraldur@haraldur.pro">Hafa samband</a>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            Greiðslur samkvæmt viðmiðunartöxtum SÍM —
+            <a href="https://sim.is/reiknivel" target="_blank" rel="noopener"
+                >sim.is/reiknivel</a
+            >
+        </footer>
+    </body>
+</html>
