@@ -1,9 +1,16 @@
 # HaraldurPro — Claude Code Notes
 
-Single-file site: `index.html`. All CSS is inline in `<style>`. All JS is inline at the bottom. No build step.
+Main site: `index.html`. Subpage: `radgjof.html`. All CSS is inline in `<style>`. All JS is inline at the bottom. No build step.
 
-## Sections (in DOM order)
-- NAV → HERO → INTRO → SERVICES → PARTNERS → ABOUT → CONTACT → FOOTER
+## Pages
+- `index.html` — forsíða
+- `radgjof.html` — ráðgjafarþjónusta (Icelandic only, no i18n, standalone CSS, links back to index)
+
+## index.html sections (in DOM order)
+- NAV → HERO → INTRO → SERVICES → CTA → PARTNERS → ABOUT → CONTACT → FOOTER
+
+### CTA (after SERVICES)
+A `<div>` with an `<a data-i18n="cta_consulting" href="radgjof.html">` button sits between SERVICES and PARTNERS. Styled with inline CSS (border, border-radius 4px, hover via onmouseover/onmouseout).
 
 ## Partners section (`/images/partners/`)
 The "Selected work with" strip sits between SERVICES and ABOUT. 21 institutions total.
@@ -55,7 +62,13 @@ All logos must be **white fills on transparent background**. When converting dow
 5. Update this table above
 
 ## i18n
-Three languages: `en`, `is`, `no`. All strings in the `strings` object in the inline `<script>`. The PARTNERS section label ("Selected work with") is currently hard-coded English — add i18n keys if multilingual support is needed there.
+Three languages: `en`, `is`, `no`. All strings in the `strings` object in the inline `<script>`. Current keys: `intro`, `service_1_title`, `service_1_body`, `service_2_title`, `service_2_body`, `service_3_title`, `service_3_body`, `about`, `contact_label`, `nav_consulting`, `cta_consulting`, `footer`, `footer_link_text`. The PARTNERS section label ("Selected work with") is hard-coded English.
+
+### Nav consulting link
+`<a data-i18n="nav_consulting" href="radgjof.html">` in `<nav>`, between site-name and lang-toggle. Uses `margin-left: auto; margin-right: 2rem` to push it right. Hover handled via inline onmouseover/onmouseout.
+
+## radgjof.html
+Standalone page — own `<style>` block (copied from index, plus `.two-col`, `.card-subtitle`, `.back-link`). No JS/i18n. Icelandic content only. Hero: `images/radgjof-hero2.jpg`. Structure: NAV (site name links to index) → BACK LINK → HERO → INTRO (h1 + p) → SERVICES (2-col grid, `.services.two-col`) → CONTACT → FOOTER.
 
 ## Deployment
 Cloudflare Pages via `wrangler pages deploy`. Project name: `haraldur-pro`.
