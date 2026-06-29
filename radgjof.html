@@ -145,13 +145,8 @@
                 margin: 0 auto;
                 padding: 0 2rem;
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 gap: 1.5rem;
-            }
-
-            .services.two-col {
-                grid-template-columns: repeat(2, 1fr);
-                max-width: 720px;
             }
 
             .card {
@@ -231,8 +226,7 @@
             }
 
             @media (max-width: 680px) {
-                .services,
-                .services.two-col {
+                .services {
                     grid-template-columns: 1fr;
                     padding: 0 1.25rem;
                 }
@@ -270,7 +264,7 @@
         </div>
 
         <!-- SERVICES -->
-        <section class="services two-col">
+        <section class="services">
             <div class="card">
                 <h3 data-i18n="radgjof_card1_title"></h3>
                 <p class="card-subtitle" data-i18n="radgjof_card1_sub"></p>
@@ -289,6 +283,16 @@
                     <li data-i18n="pol_point_1"></li>
                     <li data-i18n="pol_point_2"></li>
                     <li data-i18n="pol_point_3"></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2 data-i18n="radgjof_card3_title"></h2>
+                <h3 data-i18n="radgjof_card3_sub"></h3>
+                <p data-i18n="radgjof_card3_body"></p>
+                <ul>
+                    <li data-i18n="art_point_1"></li>
+                    <li data-i18n="art_point_2"></li>
+                    <li data-i18n="art_point_3"></li>
                 </ul>
             </div>
         </section>
@@ -329,6 +333,12 @@
                     pol_point_1: "Data-driven argumentation from raw data.",
                     pol_point_2: "Comparative analysis of Nordic cultural infrastructure.",
                     pol_point_3: "Design of policy briefs and governmental presentation decks.",
+                    radgjof_card3_title: "Artist Mentoring & Technical Consulting",
+                    radgjof_card3_sub: "For visual artists and designers",
+                    radgjof_card3_body: "Technology on its own is merely a tool — but when guided by clear vision, it can transform consciousness and perception. I mentor artists in overcoming technical fear and approaching tools like AI on their own terms. Whether it's utilizing AI to streamline administration and free up creative time, or solving complex bottlenecks, I help you ensure the deep core of your work remains at the forefront.",
+                    art_point_1: "Overcoming technical fear and utilizing AI for both artistic practice and administration.",
+                    art_point_2: "Empowerment: I show you how to build any software yourself using AI — from sensor solutions to complex audio/video data processing (sonification & visualization).",
+                    art_point_3: "Multi-channel sound and video systems on any scale — including video mapping, from small installations to large-scale spatial environments and broadcasting.",
                     contact_label: "Get in touch",
                     footer: "Fees follow SÍM professional guidelines",
                     footer_link_text: "sim.is/reiknivel",
@@ -348,6 +358,12 @@
                     pol_point_1: "Töluleg röksemdafærsla úr hrágögnum.",
                     pol_point_2: "Samanburðargreining á norrænum menningarinnviðum.",
                     pol_point_3: "Hönnun á stefnubréfum (Policy Briefs) og stjórnvaldsglærum.",
+                    radgjof_card3_title: "Handleiðsla og tækniráðgjöf",
+                    radgjof_card3_sub: "Fyrir listamenn og hönnuði",
+                    radgjof_card3_body: "Tæknin ein og sér er aðeins verkfæri — en þegar hún styður við skýra sýn getur hún umbreytt vitund og upplifun. Ég leiðbeini listamönnum við að yfirstíga tæknilegan ótta og nýta nýjustu verkfæri á þeirra eigin forsendum. Hvort sem það er að beisla gervigreind til að minnka umsýslu og skapa meiri tíma fyrir listina, eða að leysa flókna tæknihnúta, hjálpa ég þér að halda kjarna verksins alltaf í forgrunni.",
+                    art_point_1: "Aðstoð við að yfirstíga tækniótta og nýta gervigreind bæði í sköpun og rekstri.",
+                    art_point_2: "Valdefling: Ég sýni þér hvernig þú getur sjálf(ur) smíðað hvaða hugbúnað sem er — frá skynjaralausnum til flókinnar hljóð- og myndgervingar gagna (sonification/visualization).",
+                    art_point_3: "Fjölrása hljóð- og myndkerfi í öllum stærðum — þar á meðal vídeóvörpun (video mapping), frá smæstu innsetningum upp í stór rými, streymi og útsendingar (broadcasting).",
                     contact_label: "Hafa samband",
                     footer: "Greiðslur samkvæmt viðmiðunartöxtum SÍM",
                     footer_link_text: "sim.is/reiknivel",
@@ -367,6 +383,12 @@
                     pol_point_1: "Datadrevet argumentasjon basert på rådata.",
                     pol_point_2: "Komparativ analyse av nordisk kulturinfrastruktur.",
                     pol_point_3: "Utforming av policy-notater og presentasjoner for myndigheter.",
+                    radgjof_card3_title: "Veiledning og teknisk rådgivning",
+                    radgjof_card3_sub: "For kunstnere og designere",
+                    radgjof_card3_body: "Teknologi i seg selv er bare et verktøy – men styrt av en klar visjon kan den transformere bevissthet og opplevelse. Jeg veileder kunstnere i å overvinne teknisk frykt og bruke verktøy som KI på egne premisser. Enten det handler om å bruke kunstig intelligens for å effektivisere administrasjon og frigjøre kreativ tid, eller å løse komplekse utfordringer, hjelper jeg deg med å holde kjernen i verket i fokus.",
+                    art_point_1: "Overvinne teknisk frykt og kritisk bruk av KI i både kunstnerisk virke og drift.",
+                    art_point_2: "Myndiggjøring: Jeg viser deg hvordan du selv kan bygge hvilken som helst programvare ved hjelp av KI — fra sensorløsninger til kompleks lyd- og videogenerering av data (sonification/visualization).",
+                    art_point_3: "Flerkanals lyd- og videosystemer i alle størrelser — inkludert videoprojeksjon (video mapping), fra små installasjoner til store rom, strømming og kringkasting (broadcasting).",
                     contact_label: "Ta kontakt",
                     footer: "Honorar etter SÍM faglige retningslinjer",
                     footer_link_text: "sim.is/reiknivel",
